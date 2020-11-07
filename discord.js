@@ -28,6 +28,6 @@ client.on('message', async message => {
         message.reply('You need to join a voice channel first!');
       }
       //This is going to be the stream that can go with Google stuff?
-      const ReadableStream = connection.voiceReceiver.createStream(message.member.user);
+      const ReadableStream = connection.receiver.createStream(message.member.user);
     }
   });
